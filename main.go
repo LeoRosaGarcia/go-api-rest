@@ -16,8 +16,8 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusOK).JSON(fiber.Map{
 			"success":     true,
-			"message":     "You are at the root endpoint 😉",
-			"github_repo": "https://github.com/MikeFMeyer/TodoContent-go-mongodb-rest-api",
+			"message":     "You are at the root endpoint",
+			"github_repo": "Based on MikeFMeyer repo: https://github.com/MikeFMeyer/TodoContent-go-mongodb-rest-api",
 		})
 	})
 
